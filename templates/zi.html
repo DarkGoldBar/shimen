@@ -1,0 +1,23 @@
+{% extends "base.html.jinja" %}
+{% block title %}{{ title }}{% endblock %}
+{% block main %}
+<div class="container">
+  <h1>{{ title }}</h1>
+  {{ description }}
+  <h2>字体</h2>
+  {% for f in fonts %}
+  <div>
+    <div>
+      <img src="{{ f['img'] }}">
+    </div>
+    <div>
+      <img src="{{ f['description'] }}">
+    </div>
+  </div>
+  {% endfor %}
+  <h2>释义</h2>
+  {{ meaning['zi'] }}
+  {{ meaning['ci'] }}
+  {{ meaning['ju'] }}
+</div>
+{% endblock %}

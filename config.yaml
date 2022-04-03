@@ -1,0 +1,8 @@
+.global:
+  target_path: ./docs
+  data_path: ./data
+  assets_path: ./assets
+  templates_path: ./templates
+
+models.Zi:
+  - zi.yaml
